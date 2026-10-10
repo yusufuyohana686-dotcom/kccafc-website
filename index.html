@@ -3,90 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KCCA FC - Official | Kasasiro</title>
+<title>KCCA FC | Cityzens Since 1963 - Official Website</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="top-bar" id="home"><span>🔥 URA 0-1 KCCA | 9 Oct 2026 | Ahimbisibwe 59'</span><span>#WeAreKCCA</span></div>
+<!-- TOP BAR LIKE OFFICIAL -->
+<div class="top-bar"><span>13x UPL Champions | 10x Uganda Cup | MTN Omondi Stadium, Lugogo - 10,000 Capacity</span><span>#WeAreKCCA #CityzensSince1963</span></div>
 
 <nav class="navbar">
-<div class="logo">KCCA <span>FC</span></div>
+<div class="logo">KCCA <span>FC</span> <small>Since 1963</small></div>
 <ul class="nav-links">
 <li><a href="#home">Home</a></li>
 <li><a href="#news">News</a></li>
-<li><a href="#gallery">Team</a></li>
-<li><a href="#videos">Videos</a></li>
-<li><a href="#gallery">Gallery</a></li>
+<li><a href="#fixtures">Fixtures</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#academy">Academy</a></li>
+<li><a href="#shop">Shop</a></li>
 </ul>
-<button class="btn-yellow" onclick="document.getElementById('fixtures').scrollIntoView({behavior:'smooth'})">Buy Ticket</button>
+<button class="btn-yellow" id="buyBtn">Buy Ticket</button>
 </nav>
 
-<section class="hero" id="hero-section">
-<div class="hero-text">
-<h4>BREAKING: KCCA BEATS URA 1-0</h4>
-<h1>THE HUNTER<br><span>IS BACK</span></h1>
-<p>Ivan Ahimbisibwe scores on return. Kasasiro Boys now 7th!</p>
-<button class="btn-red" onclick="document.getElementById('videos').scrollIntoView({behavior:'smooth'})">Watch Highlights</button>
+<section class="hero-main" id="home">
+<div class="hero-left">
+<h4>STAR TIMES UPL - 9 OCT 2026</h4>
+<h1>URA 0-1 KCCA<br><span>THE HUNTER IS BACK</span></h1>
+<p>Ivan Ahimbisibwe scores on return from Iraq at Hamz Stadium. KCCA now 7th with 7 points from 5 games.</p>
+<div class="hero-btns"><button class="btn-yellow" onclick="document.getElementById('media').scrollIntoView({behavior:'smooth'})">Watch Highlights</button><button class="btn-outline">Match Report</button></div>
 </div>
-<div class="hero-score">
-<p>LAST RESULT - 9 OCT 2026</p>
-<h2>URA 0-1 KCCA</h2>
-<p>MTN Omondi Stadium, Lugogo | Goal: Ahimbisibwe 59'</p>
-</div>
-</section>
-
-<section class="fixtures" id="fixtures">
-<div>✅ URA 0-1 KCCA (9 Oct) - Hamz Stadium</div>
-<div>✅ KCCA 1-0 Kataka (16 Sep) - Lugogo</div>
-<div class="live">NEXT: KCCA vs Ntugasaze - Tue 13 Oct - MTN Omondi</div>
-</section>
-
-<section class="section" id="gallery">
-<h2 class="section-title">MTN Omondi Stadium - Home of KCCA</h2>
-<div class="gallery-grid">
-<img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600&q=80" alt="Lugogo stadium night">
-<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&q=80" alt="KCCA fans Lugogo">
-<img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&q=80" alt="Training Lugogo">
-<img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&q=80" alt="Team MTN Omondi">
-<img src="https://kccafc.co.ug/wp-content/uploads/2023/04/MTN-Omondi-Stadium.jpg" alt="MTN Omondi official" onerror="this.src='https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=600'">
-<img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&q=80" alt="KCCA match">
-<img src="https://images.unsplash.com/photo-1431324155629-1a6deb1a3540?w=600&q=80" alt="Goal celebration">
+<div class="hero-right">
+<div class="fixture-card"><p>UP NEXT</p><h3>Ntugasaze FC vs KCCA FC</h3><span>13 OCT 2026 - 16:00 | Kira Police Arena</span><button class="btn-small">Tickets TBA</button></div>
+<div class="fixture-card"><p>THEN</p><h3>KCCA FC vs UPDF FC</h3><span>22 OCT 2026 - 19:00 | MTN Omondi Stadium</span><button class="btn-small">Tickets TBA</button></div>
+<div class="fixture-card"><p>THEN</p><h3>KCCA FC vs Lugazi FC</h3><span>28 OCT 2026 - 20:00 | MTN Omondi Stadium</span><button class="btn-small">Tickets TBA</button></div>
 </div>
 </section>
 
-<section class="section dark-section" id="videos">
-<h2 class="section-title" style="color:white;">Latest Videos - Official KCCA FC</h2>
-<div class="video-grid">
-<div class="video-card"><iframe src="https://www.youtube.com/embed/nvF4gRWXYG4" allowfullscreen></iframe><h3>URA vs KCCA Buildup - 9 Oct 2026</h3></div>
-<div class="video-card"><iframe src="https://www.youtube.com/embed/SyLX2aW32Os" allowfullscreen></iframe><h3>KCCA 4-1 Mbarara - Highlights</h3></div>
-<div class="video-card"><iframe src="https://www.youtube.com/embed/gSE5FcwCm9U" allowfullscreen></iframe><h3>KCCA vs Vipers Derby</h3></div>
+<!-- LEAGUE TABLE LIKE OFFICIAL SITE -->
+<section class="section table-section" id="fixtures">
+<h2 class="section-title">Uganda Premier League Table 2026/27</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Pos</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr>
+<tr><td>1</td><td>BUL FC</td><td>4</td><td>4</td><td>0</td><td>0</td><td>+8</td><td>12</td></tr>
+<tr><td>2</td><td>NEC FC</td><td>5</td><td>3</td><td>2</td><td>0</td><td>+7</td><td>11</td></tr>
+<tr><td>3</td><td>SC Villa</td><td>5</td><td>3</td><td>2</td><td>0</td><td>+6</td><td>11</td></tr>
+<tr><td>4</td><td>Entebbe UPPC</td><td>5</td><td>3</td><td>1</td><td>1</td><td>+4</td><td>10</td></tr>
+<tr style="background:#FFCC00;font-weight:700"><td>7</td><td>KCCA FC</td><td>5</td><td>2</td><td>1</td><td>2</td><td>-2</td><td>7</td></tr>
+</table>
 </div>
 </section>
 
+<!-- LATEST NEWS FROM KCCAF.CO.UG -->
 <section class="section" id="news">
-<h2 class="section-title">Latest News</h2>
+<h2 class="section-title">Latest News - Official kccafc.co.ug</h2>
 <div class="news-grid">
-<div class="news-card"><img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=400"><h3>Ahimbisibwe hunts URA at Nakivubo</h3><p>58th minute winner...</p></div>
-<div class="news-card"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400"><h3>MTN Omondi Stadium to get floodlights</h3><p>Night games coming to Lugogo...</p></div>
-<div class="news-card"><img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400"><h3>KCCA 1-0 Kataka - First win</h3><p>Anyama scored at Lugogo...</p></div>
+<div class="news-card big"><img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600"><div><h3>MATCH REPORT | Ahimbisibwe hunts down URA at Nakivubo - 9 Oct 2026</h3><p>Sammy Ssebaduka assist, Hunter finishes 58th minute. Penalty missed 81st min but 1-0 win secured. Lineup: Mugolofa, Obenchan (c), Lazaro, Walusimbi...</p><a>Read More →</a></div></div>
+<div class="news-card"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400"><h3>Anyama sole goal breaks Kataka - 16 Sep 2026</h3><p>KCCA 1-0 Kataka at MTN Omondi...</p></div>
+<div class="news-card"><img src="https://images.unsplash.com/photo-1579952363873-27f1075596d4?w=400"><h3>Match Preview: KCCA visit Tax Collectors</h3><p>Head to head: URA 15 wins, KCCA 11 wins...</p></div>
 </div>
 </section>
 
-<footer><p>© 2026 KCCA FC | MTN Omondi Stadium, Lugogo | 10,000 Capacity | Est. 1963</p></footer>
+<!-- TEAM -->
+<section class="section dark-section" id="team">
+<h2 class="section-title" style="color:white;">First Team - Kasasiro Boys 2026/27</h2>
+<div class="team-grid">
+<div class="player"><img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=300"><h4>Filbert Obenchan (C)</h4><p>Defender</p></div>
+<div class="player"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=300"><h4>Ibrahim Kasule</h4><p>Midfielder</p></div>
+<div class="player"><img src="https://images.unsplash.com/photo-1431324155629-1a6deb1a3540?w=300"><h4>Ivan Ahimbisibwe</h4><p>Striker - The Hunter</p></div>
+<div class="player"><img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=300"><h4>Sammy Ssebaduka</h4><p>Winger</p></div>
+<div class="player"><img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=300"><h4>Emmanuel Anyama</h4><p>Forward</p></div>
+<div class="player"><img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=300"><h4>Brian Ssenyondo</h4><p>Head Coach</p></div>
+</div>
+</section>
+
+<!-- MEDIA / VIDEOS -->
+<section class="section" id="media">
+<h2 class="section-title">KCCA FC TV - Latest Videos</h2>
+<div class="video-grid">
+<div class="video-card"><iframe src="https://www.youtube.com/embed/nvF4gRWXYG4"></iframe><h3>URA 0-1 KCCA - Highlights & Goals</h3></div>
+<div class="video-card"><iframe src="https://www.youtube.com/embed/SyLX2aW32Os"></iframe><h3>KCCA 1-0 Kataka - First Win 2026/27</h3></div>
+<div class="video-card"><iframe src="https://www.youtube.com/embed/qIM8iB35-Fo"></iframe><h3>MTN Omondi Stadium Construction</h3></div>
+</div>
+</section>
+
+<!-- ABOUT + ACADEMY + SHOP -->
+<section class="section split-section">
+<div id="academy"><h2 class="section-title">About Club</h2><p><strong>Founded 12 April 1963</strong> by Samuel Wamala. 13x UPL Champions, 10x Uganda Cup. Home: MTN Omondi Stadium (10k). Nickname: Kasasiro Boys / Cityzens. Owned by KCCA.</p><h3 style="margin-top:20px;">KCCA Soccer Academy</h3><p>Academy curtain raiser vs Maroons at 12PM before first team. U20 & U17 national duty players: Derrick Ssozi, Jjemba Ukasha.</p></div>
+<div id="shop"><h2 class="section-title">Shop & Tickets</h2><div class="shop-box"><h3>Home Kit 2026/27 - CHINT Sponsor</h3><p>Yellow/Blue | Buy at Lugogo</p><button class="btn-yellow">Shop Now</button></div><div class="shop-box"><h3>Tickets: KCCA vs UPDF - 22 Oct</h3><p>MTN Omondi Stadium, 19:00 EAT | TBA - Follow @kccafc</p><button class="btn-yellow" onclick="alert('Redirecting to kccafc.co.ug ticketing...')">Buy via Official Site</button></div></div>
+</section>
+
+<footer><p>© 2026 KCCA FC - Cityzens Since 1963 | Official Clone inspired by kccafc.co.ug | Follow: Facebook/kccafc Twitter/kccafc Instagram/kccafc</p></footer>
+
+<div id="ticketModal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>Buy Ticket - KCCA FC</h2><p>Next: Ntugasaze FC vs KCCA FC - 13 Oct 16:00 - Kira Police Arena</p><input placeholder="Full Name"><input placeholder="Phone - MTN/Airtel"><select><option>Regular - 10k UGX</option><option>VIP - 30k</option><option>VVIP - 50k</option></select><button class="btn-yellow" style="width:100%;margin-top:10px;" onclick="alert('Ticket booked! Check SMS')">Confirm Purchase</button></div></div>
 
 <script>
-const bgImages = [
-  'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9',
-  'https://images.unsplash.com/photo-1522778119026-d647f0596c20',
-  'https://images.unsplash.com/photo-1577223625816-7546f13df25d',
-  'https://kccafc.co.ug/wp-content/uploads/2023/04/MTN-Omondi-Stadium.jpg'
-];
-let idx=0;
-setInterval(()=>{
-  idx=(idx+1)%bgImages.length;
-  document.getElementById('hero-section').style.backgroundImage=`linear-gradient(rgba(10,30,66,0.88), rgba(10,30,66,0.88)), url('${bgImages[idx]}')`;
-},5000);
+document.getElementById('buyBtn').onclick=()=>document.getElementById('ticketModal').style.display='block';
+document.querySelector('.close').onclick=()=>document.getElementById('ticketModal').style.display='none';
+window.onclick=(e)=>{if(e.target==document.getElementById('ticketModal')) document.getElementById('ticketModal').style.display='none'}
 </script>
 </body>
 </html>
