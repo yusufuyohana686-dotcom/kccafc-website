@@ -3,96 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KCCA FC - Official | Kasasiro Boys</title>
+<title>KCCA FC - Official | Kasasiro</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="top-bar"><span>🔥 URA 0-1 KCCA | 9 Oct 2026 | Ahimbisibwe 59'</span><span>#WeAreKCCA</span></div>
+<div class="top-bar" id="home"><span>🔥 URA 0-1 KCCA | 9 Oct 2026 | Ahimbisibwe 59'</span><span>#WeAreKCCA</span></div>
+
 <nav class="navbar">
 <div class="logo">KCCA <span>FC</span></div>
-<ul class="nav-links"><li>Home</li><li>News</li><li>Team</li><li>Videos</li><li>Gallery</li></ul>
-<button class="btn-yellow">Buy Ticket</button>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#gallery">Team</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#gallery">Gallery</a></li>
+</ul>
+<button class="btn-yellow" onclick="document.getElementById('fixtures').scrollIntoView({behavior:'smooth'})">Buy Ticket</button>
 </nav>
 
-<section class="hero" id="hero">
+<section class="hero" id="hero-section">
 <div class="hero-text">
 <h4>BREAKING: KCCA BEATS URA 1-0</h4>
 <h1>THE HUNTER<br><span>IS BACK</span></h1>
-<p>Ivan Ahimbisibwe scores on return from Iraq. Kasasiro Boys now 7th with 7 points!</p>
-<button class="btn-red">Watch Highlights</button>
+<p>Ivan Ahimbisibwe scores on return. Kasasiro Boys now 7th!</p>
+<button class="btn-red" onclick="document.getElementById('videos').scrollIntoView({behavior:'smooth'})">Watch Highlights</button>
 </div>
 <div class="hero-score">
 <p>LAST RESULT - 9 OCT 2026</p>
 <h2>URA 0-1 KCCA</h2>
-<p>Hamz Stadium, Nakivubo | Goal: Ahimbisibwe 59'</p>
+<p>MTN Omondi Stadium, Lugogo | Goal: Ahimbisibwe 59'</p>
 </div>
 </section>
 
-<section class="fixtures">
-<div>✅ URA 0-1 KCCA (9 Oct)</div>
-<div>✅ KCCA 1-0 Kataka (16 Sep)</div>
-<div class="live">NEXT: KCCA vs Ntugasaze - Tue 13 Oct</div>
+<section class="fixtures" id="fixtures">
+<div>✅ URA 0-1 KCCA (9 Oct) - Hamz Stadium</div>
+<div>✅ KCCA 1-0 Kataka (16 Sep) - Lugogo</div>
+<div class="live">NEXT: KCCA vs Ntugasaze - Tue 13 Oct - MTN Omondi</div>
 </section>
 
-<!-- 7 IMAGES GALLERY -->
-<section class="section">
-<h2 class="section-title">Kasasiro Gallery - 7 Photos</h2>
+<section class="section" id="gallery">
+<h2 class="section-title">MTN Omondi Stadium - Home of KCCA</h2>
 <div class="gallery-grid">
-<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600" alt="Stadium">
-<img src="https://images.unsplash.com/photo-1431324155629-1a6deb1a3540?w=600" alt="Match">
-<img src="https://images.unsplash.com/photo-1579952363873-27f1075596d4?w=600" alt="Player">
-<img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600" alt="Fans">
-<img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=600" alt="Training">
-<img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600" alt="Team">
-<img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=600" alt="Goal">
+<img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600&q=80" alt="Lugogo stadium night">
+<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&q=80" alt="KCCA fans Lugogo">
+<img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&q=80" alt="Training Lugogo">
+<img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&q=80" alt="Team MTN Omondi">
+<img src="https://kccafc.co.ug/wp-content/uploads/2023/04/MTN-Omondi-Stadium.jpg" alt="MTN Omondi official" onerror="this.src='https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=600'">
+<img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&q=80" alt="KCCA match">
+<img src="https://images.unsplash.com/photo-1431324155629-1a6deb1a3540?w=600&q=80" alt="Goal celebration">
 </div>
 </section>
 
-<!-- REAL VIDEOS LAST 7 DAYS -->
-<section class="section dark-section">
-<h2 class="section-title" style="color:white;">Latest Videos - Wiki Hii</h2>
+<section class="section dark-section" id="videos">
+<h2 class="section-title" style="color:white;">Latest Videos - Official KCCA FC</h2>
 <div class="video-grid">
-<div class="video-card">
-<iframe src="https://www.youtube.com/embed/nvF4gRWXYG4" allowfullscreen></iframe>
-<h3>URA 0-1 KCCA - Match Buildup (9 Oct 2026)</h3>
+<div class="video-card"><iframe src="https://www.youtube.com/embed/nvF4gRWXYG4" allowfullscreen></iframe><h3>URA vs KCCA Buildup - 9 Oct 2026</h3></div>
+<div class="video-card"><iframe src="https://www.youtube.com/embed/SyLX2aW32Os" allowfullscreen></iframe><h3>KCCA 4-1 Mbarara - Highlights</h3></div>
+<div class="video-card"><iframe src="https://www.youtube.com/embed/gSE5FcwCm9U" allowfullscreen></iframe><h3>KCCA vs Vipers Derby</h3></div>
 </div>
-<div class="video-card">
-<iframe src="https://www.youtube.com/embed/SyLX2aW32Os" allowfullscreen></iframe>
-<h3>HIGHLIGHTS | KCCA 4-1 Mbarara City - Latest Win</h3>
-</div>
-<div class="video-card">
-<iframe src="https://www.youtube.com/embed/gSE5FcwCm9U" allowfullscreen></iframe>
-<h3>HIGHLIGHTS | KCCA vs Vipers - Derby</h3>
-</div>
-</div>
-<p style="text-align:center; margin-top:20px; color:#aaa;">Source: Official KCCA FC YouTube Channel</p>
 </section>
 
-<section class="section">
-<h2 class="section-title">Latest News - Last 7 Days</h2>
+<section class="section" id="news">
+<h2 class="section-title">Latest News</h2>
 <div class="news-grid">
-<div class="news-card"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400"><h3>Ahimbisibwe hunts down URA at Nakivubo - 9 Oct</h3><p>Returning striker scores winner vs former club...</p></div>
-<div class="news-card"><img src="https://images.unsplash.com/photo-1579952363873-27f1075596d4?w=400"><h3>KCCA set to unleash Ahimbisibwe</h3><p>Star striker cleared after Iraq stint...</p></div>
-<div class="news-card"><img src="https://images.unsplash.com/photo-1431324155629-1a6deb1a3540?w=400"><h3>KCCA 1-0 Kataka - First win of season</h3><p>Anyama scored...</p></div>
+<div class="news-card"><img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=400"><h3>Ahimbisibwe hunts URA at Nakivubo</h3><p>58th minute winner...</p></div>
+<div class="news-card"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400"><h3>MTN Omondi Stadium to get floodlights</h3><p>Night games coming to Lugogo...</p></div>
+<div class="news-card"><img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400"><h3>KCCA 1-0 Kataka - First win</h3><p>Anyama scored at Lugogo...</p></div>
 </div>
 </section>
 
-<footer><p>© 2026 KCCA FC | Live from Kampala | Updated: 10 Oct 2026</p></footer>
+<footer><p>© 2026 KCCA FC | MTN Omondi Stadium, Lugogo | 10,000 Capacity | Est. 1963</p></footer>
 
 <script>
 const bgImages = [
+  'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9',
   'https://images.unsplash.com/photo-1522778119026-d647f0596c20',
-  'https://images.unsplash.com/photo-1431324155629-1a6deb1a3540',
-  'https://images.unsplash.com/photo-1579952363873-27f1075596d4',
-  'https://images.unsplash.com/photo-1553778263-73a83bab9b0c',
-  'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9'
+  'https://images.unsplash.com/photo-1577223625816-7546f13df25d',
+  'https://kccafc.co.ug/wp-content/uploads/2023/04/MTN-Omondi-Stadium.jpg'
 ];
 let idx=0;
 setInterval(()=>{
   idx=(idx+1)%bgImages.length;
-  document.getElementById('hero').style.backgroundImage=`linear-gradient(rgba(10,30,66,0.85), rgba(10,30,66,0.85)), url('${bgImages[idx]}?w=1200')`;
-},4000);
+  document.getElementById('hero-section').style.backgroundImage=`linear-gradient(rgba(10,30,66,0.88), rgba(10,30,66,0.88)), url('${bgImages[idx]}')`;
+},5000);
 </script>
 </body>
 </html>
