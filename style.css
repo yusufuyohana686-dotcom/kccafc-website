@@ -1,19 +1,28 @@
+:root {
+  --yellow: #FFCC00;
+  --blue: #0A1E42;
+  --dark: #081530;
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#f4f6f8;color:#111}
-.topbar{background:#0a1931;color:#ffcc00;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;font-family:'Oswald',sans-serif}
-.logo{font-size:22px;font-weight:700}.badge{border:1px solid #ffcc00;padding:4px 8px;font-size:12px}
-.hero{background:linear-gradient(180deg,#0a1931 0%,#132e5f 100%);color:white;text-align:center;padding:55px 18px 45px}
-.hero h1{font-family:'Oswald',sans-serif;font-size:42px;line-height:1.1}
-.hero h1 span{color:#ffcc00}
-.hero p{margin:12px 0 22px;opacity:.85;font-size:14px}
-.btn{background:#ffcc00;color:#0a1931;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block}
-.ticker{background:#ffcc00;color:#0a1931;padding:10px;text-align:center;font-weight:700;font-size:13px}
-.card{background:white;margin:16px;border-radius:14px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
-.card h2{font-family:'Oswald',sans-serif;margin-bottom:14px;color:#0a1931;border-left:4px solid #ffcc00;padding-left:10px}
-.match{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #eee}
-.meta{font-size:12px;opacity:.7;text-align:right}
-.news{margin-bottom:16px}.news h3{font-size:15px;margin-bottom:4px;color:#0a1931}.news p{font-size:13px;opacity:.8;line-height:1.5}
-.players{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.p{background:#f4f6f8;border-radius:10px;padding:12px;font-size:13px;font-weight:600;display:flex;gap:8px;align-items:center}
-.p span{background:#0a1931;color:#ffcc00;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px}
-footer{background:#0a1931;color:#ffcc00;text-align:center;padding:28px 18px;margin-top:20px;font-weight:700}
+body{font-family:'Inter',sans-serif;background:#f5f5f5;color:#111}
+.top-bar{background:var(--yellow);display:flex;justify-content:space-between;padding:6px 40px;font-size:12px;font-weight:600}
+.navbar{background:var(--blue);color:white;display:flex;align-items:center;justify-content:space-between;padding:15px 40px}
+.logo{font-family:'Oswald';font-size:28px;font-weight:700} .logo span{color:var(--yellow)}
+.nav-links{display:flex;list-style:none;gap:25px;font-weight:600;text-transform:uppercase;font-size:14px}
+.btn-yellow{background:var(--yellow);border:none;padding:10px 22px;font-weight:700;cursor:pointer;text-transform:uppercase}
+.btn-red{background:var(--yellow);border:none;padding:10px 22px;font-weight:700;cursor:pointer;text-transform:uppercase}
+.btn-outline{background:transparent;border:2px solid white;color:white;padding:10px 22px;font-weight:700;cursor:pointer;margin-left:10px}
+.hero{background:linear-gradient(rgba(10,30,66,0.8), rgba(10,30,66,0.8)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20');background-size:cover;color:white;padding:100px 40px;display:flex;justify-content:space-between;align-items:end}
+.hero h4{color:var(--yellow);letter-spacing:2px} .hero h1{font-family:'Oswald';font-size:72px;line-height:1} .hero h1 span{color:var(--yellow)}
+.hero-score{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:20px;border-left:4px solid var(--yellow)}
+.hero-score span{color:var(--yellow)}
+.fixtures{background:var(--dark);color:white;display:flex;justify-content:space-around;padding:15px;font-family:'Oswald';}
+.live{color:var(--yellow)}
+.section{padding:60px 40px}
+.section-title{font-family:'Oswald';font-size:36px;border-left:6px solid var(--yellow);padding-left:15px;margin-bottom:25px}
+.news-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
+.news-card{background:white;padding:0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.news-card .img{height:220px;background:#ddd;background-image:url('https://images.unsplash.com/photo-1431324155629-1a6deb1a3540');background-size:cover}
+.news-card h3{padding:15px;font-family:'Oswald'}
+.news-card p{padding:0 15px 15px;color:#555}
+footer{background:var(--blue);color:white;text-align:center;padding:20px;margin-top:40px}
